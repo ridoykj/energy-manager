@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itbd.energymanager.view.ui.manager.module.home.DashboardView">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="custom-main" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="8.0" styleClass="custom-row">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="custom-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Area" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="25" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="custom-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Emplyee" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="157" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="custom-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Customer" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="1285" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="custom-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Meter" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="2371" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="custom-row" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Bill Status">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tbvBill" prefHeight="200.0" prefWidth="200.0" styleClass="custom-table" VBox.vgrow="ALWAYS">
+                          <columns>
+                            <TableColumn fx:id="tbBillMonth" prefWidth="75.0" text="Month" />
+                            <TableColumn fx:id="tbBill" prefWidth="75.0" text="Bill" />
+                              <TableColumn fx:id="tbBillPaid" prefWidth="75.0" text="Paid" />
+                              <TableColumn fx:id="tbBillDue" prefWidth="75.0" text="Due" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <PieChart fx:id="chPie" title="Collection Status" HBox.hgrow="ALWAYS" />
+                        <LineChart fx:id="chLine" title="Bill Collection" HBox.hgrow="ALWAYS">
+                          <xAxis>
+                            <CategoryAxis label="Day" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Collection" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@../../../../../assets/css/main.css" />
+      <URL value="@../../../../../assets/css/component/dashboard.css" />
+      <URL value="@../../../../../assets/css/tableview.css" />
+   </stylesheets>
+</BorderPane>

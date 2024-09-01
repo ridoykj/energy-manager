@@ -1,0 +1,36 @@
+.custom-accordion {
+    -fx-background-color: white; /* Background color of the Accordion */
+    -fx-border-color: white; /* Border color of the Accordion */
+    -fx-border-width: 2px; /* Border width of the Accordion */
+}
+
+.custom-accordion .titled-pane {
+    -fx-text-fill: white; /* Text color of the header */
+    -fx-font-size: 14px; /* Font size of the header text */
+    -fx-padding: 1px; /* Padding inside the header */
+}
+
+.custom-accordion .titled-pane > .title {
+    -fx-background-color: #019879; /* Background color of the header */
+    -fx-padding: 10px; /* Padding inside the header */
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+}
+
+.custom-accordion .titled-pane:expanded {
+    -fx-background-color: #019879; /* Background color when the header is focused */
+    -fx-background-radius: 10px;
+}
+
+.custom-accordion .titled-pane > .content {
+    -fx-background-color: white; /* Background color of the content */
+    /*-fx-border-color: #019879; !* Border color around the content *!*/
+    -fx-border-width: 1px; /* Border width around the content */
+    -fx-background-radius: 0 0 10px 10px;
+    -fx-border-radius: 0 0 10px 10px;
+}
+
+.custom-accordion .titled-pane > .title > .arrow-button .arrow {
+    -fx-background-color: white; /* Background color of the arrow button */
+    -fx-text-fill: white; /* Color of the arrow icon */
+}

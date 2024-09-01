@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="500.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itbd.energymanager.view.LoginView">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="tx_user_id" prefHeight="40.0" promptText="Enter user ID" styleClass="tx-default">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="tx_user_pass" onKeyPressed="#textFieldLoginEvent" prefHeight="40.0" promptText="Enter Password" styleClass="tx-default">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="btn_login" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#loginEvent" prefHeight="35.0" prefWidth="150.0" styleClass="btn-primary" text="login">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <padding>
+                <Insets left="100.0" right="100.0" />
+            </padding>
+        </VBox>
+    </center>
+   <stylesheets>
+      <URL value="@../assets/css/main.css" />
+      <URL value="@../assets/css/button.css" />
+   </stylesheets>
+   <top>
+      <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../assets/icon/appicon/login.png" />
+         </image>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+</BorderPane>

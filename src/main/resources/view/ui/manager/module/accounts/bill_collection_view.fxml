@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" xmlns="http://javafx.com/javafx/22"
+            fx:controller="com.itbd.energymanager.view.ui.manager.module.accounts.BillCollectionView">
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="56.0" layoutY="70.0" text="Hello I am Customer"/>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

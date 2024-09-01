@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="sms_log" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20"
+              rightMargin="20" topMargin="20" bottomMargin="20" uuid="601a36ac-37fb-4a57-9d87-888e858b9dce">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <property name="com.jaspersoft.studio.unit." value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+    <property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+    <subDataset name="smslog" uuid="81b1b091-bd00-4c36-b87c-85c006b83637">
+        <queryString>
+            <![CDATA[]]>
+        </queryString>
+        <field name="sn" class="java.lang.Integer"/>
+        <field name="smsKey" class="java.lang.String"/>
+        <field name="userOrgKey" class="java.lang.String"/>
+        <field name="phone" class="java.lang.String"/>
+        <field name="status" class="java.lang.String"/>
+        <field name="invoiceNo" class="java.lang.String"/>
+        <field name="paymentType" class="java.lang.String"/>
+        <field name="amount" class="java.lang.String"/>
+        <field name="saleDate" class="java.time.LocalDateTime"/>
+        <field name="saleTime" class="java.lang.String"/>
+        <field name="sendDate" class="java.time.LocalDateTime"/>
+        <field name="sendTime" class="java.lang.String"/>
+        <field name="text" class="java.lang.String"/>
+        <field name="note" class="java.lang.String"/>
+        <field name="remark" class="java.lang.String"/>
+        <field name="userName" class="java.lang.String"/>
+    </subDataset>
+    <parameter name="SmsLogCollectionParam" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+    <parameter name="orgImageUrl" class="java.lang.String"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="555" splitType="Stretch">
+            <image hAlign="Center">
+                <reportElement x="348" y="40" width="65" height="60" uuid="0e582ad8-445e-4114-9825-64f15b4ae86b"/>
+                <imageExpression><![CDATA[$P{orgImageUrl}]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement x="298" y="0" width="210" height="25" uuid="20a54923-935c-4f36-b0f3-7ce8eb746c92">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[BANGLADESH CLUB LTD.]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="310" y="25" width="205" height="15" uuid="1cf5107d-d951-4c08-915f-619f262ed1f6"/>
+                <text><![CDATA[Executive Committe Election 2022-2023]]></text>
+            </staticText>
+            <image hAlign="Center">
+                <reportElement x="275" y="110" width="210" height="161" uuid="925abfbd-8e8c-4b5e-8224-c6fcc07c325d"/>
+                <imageExpression><![CDATA[$P{orgImageUrl}]]></imageExpression>
+            </image>
+            <staticText>
+                <reportElement x="310" y="290" width="210" height="25" uuid="a463874d-d566-41e7-9019-ee961ce43f32">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[user_name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="280" y="330" width="210" height="25" uuid="eb62bcab-7338-4a23-a009-a6ab9e92f4cd">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[A/C#: user_id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="270" y="370" width="210" height="25" uuid="832fd5cf-9490-4f7c-b731-62a39138626f">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Voter SL#: voter_sl]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="221" y="415" width="320" height="25" uuid="10bd8fe5-eb6e-49df-85d5-32bc68ebed62">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[BALLOT PAPER ISSUE COUNTER]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="350" y="440" width="63" height="25" uuid="155121f7-5e0b-4e2a-a7ff-8078a02107a6">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[[5]]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="20" y="490" width="730" height="25" uuid="1fbf68d8-373a-48f8-b0c6-18516d73a505">
+                    <property name="local_mesure_unitheight" value="pixel"/>
+                    <property name="com.jaspersoft.studio.unit.height" value="px"/>
+                </reportElement>
+                <textElement>
+                    <font size="19" isBold="true"/>
+                </textElement>
+                <text><![CDATA[PLEASE NOTE THAT MOBILE PHONE IS NOT ALLOWED INSIDE THE POLLING AREA]]></text>
+            </staticText>
+        </band>
+    </title>
+</jasperReport>

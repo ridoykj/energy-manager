@@ -1,0 +1,13 @@
+.pane-background{
+    -fx-background-color: #1596ee;
+}
+
+.tx-default{
+    -fx-background-radius: 50px;
+    -fx-font-family: "Verdana";
+    -fx-min-height: 25;
+}
+
+.custom-main {
+    -fx-background-color: #efefef; /* Background color of the header */
+}

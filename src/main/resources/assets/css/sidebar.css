@@ -1,0 +1,16 @@
+.custom-sidebar {
+    -fx-background-color:#019879; /* Background color when the header is focused */
+    -fx-padding: 5px;
+}
+
+.custom-sidebar .list-view {
+    -fx-background-color: #00c59e; /* Background color when the header is focused */
+    -fx-background-radius: 10px;
+}
+
+.custom-sidebar-btn {
+    -fx-background-color: transparent; /* Background color when the header is focused */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+}

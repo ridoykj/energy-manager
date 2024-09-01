@@ -1,0 +1,64 @@
+/* Style the entire TextArea */
+.custom-text-area {
+    -fx-background-color: #f4f4f4; /* Background color of the TextArea */
+    -fx-border-color: #f4f4f4; /* Border color */
+    /*-fx-border-width: 2px; !* Border width *!*/
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-padding: 1px; /* Padding inside the TextArea */
+    -fx-border-radius: 10px;
+}
+
+/* Style the text inside the TextArea */
+.custom-text-area .content {
+    -fx-text-fill: black; /* Text color */
+    -fx-font-size: 1em; /* Font size */
+    /*-fx-border-color: darkgray; !* Border color *!*/
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-border-radius: 10px;
+    -fx-border-color: #c9c8c8; /* Border color */
+}
+
+/* Style the caret (blinking cursor) */
+.custom-text-area .caret {
+    -fx-stroke: red; /* Caret color */
+}
+
+/* Style the selection highlight */
+.custom-text-area .selection {
+    -fx-background-color: #74d5f5; /* Highlight color */
+    -fx-background-radius: 10px; /* Rounded corners */
+    /*-fx-border-color: #74d5f5; !* Border color *!*/
+}
+
+.custom-text-area .content:selected{
+    -fx-background-color: #2d52fa; /* Highlight color */
+    -fx-background-radius: 10px; /* Rounded corners */
+    -fx-border-color: #74d5f5; /* Border color */
+}
+
+/* Style the scrollbars */
+.custom-text-area .scroll-bar:vertical, .text-area .scroll-bar:horizontal {
+    -fx-background-color: transparent; /* Background color of the scrollbar */
+    -fx-padding: 5px; /* Padding around the scrollbar */
+}
+
+.custom-text-area .scroll-bar .track {
+    -fx-background-color: #e0e0e0; /* Track background color */
+}
+
+.custom-text-area .scroll-bar .thumb {
+    -fx-background-color: #4CAF50; /* Thumb color */
+    -fx-background-radius: 5px; /* Rounded corners for the thumb */
+}
+
+.custom-text-area .scroll-bar .increment-button,
+.custom-text-area .scroll-bar .decrement-button {
+    -fx-background-color: #4CAF50; /* Button color */
+    -fx-background-radius: 5px; /* Rounded corners for buttons */
+}
+
+.custom-text-area .scroll-bar .increment-arrow,
+.custom-text-area .scroll-bar .decrement-arrow {
+    -fx-background-color: white; /* Arrow color */
+}

@@ -1,0 +1,11 @@
+.custom-imageview {
+    /*-fx-opacity: 0.8; !* Set transparency *!*/
+    /*-fx-effect: dropshadow(gaussian, #11b703, 10, 0.5, 0, 0); !* Add a drop shadow *!*/
+    /*-fx-rotate: 0; !* Rotate the image *!*/
+    /*-fx-scale-x: 1.5; !* Scale the image horizontally *!*/
+    /*-fx-scale-y: 1.5; !* Scale the image vertically *!*/
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-border-width: 2;
+    -fx-border-color: black;
+}

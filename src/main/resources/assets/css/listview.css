@@ -1,0 +1,51 @@
+/* Style the entire ListView */
+.list-view {
+    -fx-background-color: #00c59e; /* Background color of the ListView */
+    -fx-border-width: 2px; /* Border width */
+}
+
+/* Style individual cells in the ListView */
+.list-cell {
+    -fx-background-color: #00c59e; /* Background color of each cell */
+    -fx-text-fill: black; /* Text color */
+    -fx-padding: 8px; /* Padding around the cell content */
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-radius: 10px;
+}
+
+/* Style for selected cells */
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #02ad87; /* Light blue background for selected cell */
+    -fx-text-fill: #02ad87; /* White text for selected cell */
+}
+
+/* Style the hover effect for cells */
+.list-cell:hover {
+    /*-fx-background-color: #B0E0E6; !* Pale turquoise background on hover *!*/
+    -fx-background-color: #02ad87;
+}
+
+/* Style the scroll bar */
+.scroll-bar:vertical {
+    -fx-padding: 5px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #00c59e;
+}
+.list-view .scroll-bar:vertical {
+    -fx-background-color: transparent; /* Background color of the scrollbar */
+    -fx-padding: 5px; /* Padding around the scrollbar */
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #00c59e;
+}
+
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow {
+    -fx-background-color: #00c59e; /* White color for the arrows */
+}
+
+.scroll-bar .track {
+    -fx-background-color: #019879; /* Light gray track background */
+}

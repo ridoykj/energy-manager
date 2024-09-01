@@ -1,0 +1,60 @@
+.custom-table {
+    -fx-background-color: white; /* Background color of the TableView */
+}
+
+.custom-table .column-header-background {
+    -fx-background-color: #019879; /* Background color of the header */
+    -fx-background-radius: 7px;
+}
+
+.custom-table .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.custom-table .column-header, .custom-table .column-header-background {
+    -fx-font-size: 1.1em;
+    -fx-padding: 7px 5px;
+    -fx-font-weight: bold;
+    /*-fx-text-fill: #f30c0c; !* Text color of the header *!*/
+    -fx-background-color: #019879; /* Background color of the header */
+}
+
+.custom-table .table-row-cell {
+    -fx-background-color: #feffff; /* Default row color */
+}
+
+.custom-table .table-row-cell:odd {
+    -fx-background-color: #f3f3f3; /* Alternate row color */
+}
+
+.custom-table .table-cell {
+    -fx-alignment: CENTER-LEFT; /* Alignment of the cell content */
+    -fx-padding: 7px 5px; /* Padding inside each cell */
+    -fx-font-size: 1em; /* Font size inside each cell */
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.custom-table .table-row-cell:selected {
+    /*-fx-background-color: #4CAF50; !* Green background for selected row *!*/
+    -fx-text-fill: #068d6f; /* Text color for selected row */
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-row-cell:selected .table-cell {
+    /*-fx-background-color: #4CAF50; !* Ensures the whole cell is colored *!*/
+    -fx-text-fill: #068d6f; /* Ensures text color is white */
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-row-cell:selected .table-cell:focused {
+    -fx-background-color: #068d6f; /* Slightly different shade when focused */
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-cell:selected {
+    /*-fx-background-color: #4CAF50; !* Background color of the selected cell *!*/
+    -fx-text-fill: #068d6f; /* Text color of the selected cell */
+    -fx-font-weight: bold;
+}

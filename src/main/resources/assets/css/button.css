@@ -1,0 +1,97 @@
+.btn-transparent {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0px;
+}
+
+.btn-default {
+    -fx-background-radius: 50px;
+    -fx-padding: 7px 15px;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-border-color: #b9b9b9;
+    -fx-border-radius: 50px;
+}
+
+.btn-default:hover {
+    -fx-effect: dropshadow(gaussian, #c2c2c2, 10, 0.2, 1, 1);
+    -fx-border-color: transparent;
+    -fx-background-color: white;
+    /*-fx-border-width: 0px;*/
+}
+
+.btn-primary {
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+    -fx-padding: 7px 15px;
+    -fx-text-fill: #2d52fa;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-border-color: #b9b9b9;
+    -fx-border-radius: 50px;
+}
+
+.btn-primary:hover {
+    -fx-effect: dropshadow(gaussian, #c2c2c2, 10, 0.2, 2, 2);
+    -fx-background-color: #617bf3;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+
+.btn-primary .glyph-icon {
+    -fx-fill: #525252;
+}
+
+.btn-primary:hover .glyph-icon {
+    -fx-fill: white;
+}
+
+
+.btn-success {
+    -fx-background-color: #11b703;
+    -fx-background-radius: 50px;
+    -fx-padding: 7px 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-border-radius: 50px;
+}
+
+.btn-success:hover {
+    -fx-effect: dropshadow(gaussian, #c2c2c2, 10, 0.2, 2, 2);
+    -fx-background-color: #55d24e;
+    -fx-text-fill: white;
+}
+
+.btn-success .glyph-icon {
+    -fx-fill: #525252;
+}
+
+.btn-success:hover .glyph-icon {
+    -fx-fill: white;
+}
+
+
+.btn-error {
+    -fx-background-color: #ff5206;
+    -fx-background-radius: 50px;
+    -fx-padding: 7px 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Helvetica', Arial, sans-serif;
+    -fx-border-radius: 50px;
+}
+
+.btn-error:hover {
+    -fx-effect: dropshadow(gaussian, #c2c2c2, 10, 0.2, 2, 2);
+    -fx-background-color: #fd783f;
+    -fx-text-fill: white;
+}
+
+.btn-error .glyph-icon {
+    -fx-fill: #525252;
+}
+
+.btn-error:hover .glyph-icon {
+    -fx-fill: white;
+}

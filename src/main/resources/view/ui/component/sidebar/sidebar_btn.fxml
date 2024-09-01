@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+
+<Label fx:id="lb_menu" styleClass="custom-sidebar-btn" stylesheets="@../../../../assets/css/sidebar.css" text="Label" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itbd.energymanager.view.ui.component.sidebar.SideBarBtn">
+    <font>
+        <Font name="Calibri" size="14.0" />
+    </font>
+</Label>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itbd.energymanager.view.ui.manager.module.user.customer.CustomerMeterDialog">
+    <center>
+        <VBox spacing="4.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="ID" />
+                <TextField fx:id="txMeterId" styleClass="tx-default" />
+                <Label text="State" />
+                <CheckBox fx:id="cbState" mnemonicParsing="false" text="State" />
+                <Label text="Register" />
+                <DatePicker fx:id="dtRegister" />
+                <Label text="Category" />
+                <TextField fx:id="txCategory" styleClass="tx-default" />
+            </children>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </VBox>
+    </center>
+    <padding>
+        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+    </padding>
+    <bottom>
+        <HBox prefWidth="200.0" spacing="8.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#save" styleClass="btn-primary" text="Save" />
+                <Button mnemonicParsing="false" onAction="#close" styleClass="btn-error" text="Cancel" />
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+            </padding>
+        </HBox>
+    </bottom>
+   <stylesheets>
+      <URL value="@../../../../../../assets/css/main.css" />
+      <URL value="@../../../../../../assets/css/button.css" />
+   </stylesheets>
+</BorderPane>
